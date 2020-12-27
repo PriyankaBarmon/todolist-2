@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Rokkitt:wght@200;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lobster Two", cursive;
+  background-image: url("glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.card {
+  position: absolute;
+  border-radius: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  min-width: 311px;
+  padding: 30px;
+  height: 80vh;
+  background-color: rgb(250, 224, 294);
+  box-shadow: -20px 20px 6px rgba(0, 0, 0, 0.3);
+}
+.title {
+  font-family: "Rokkitt", serif;
+  font-size: 40px;
+  text-align: center;
+  margin: 15px 0px;
+  color: #0d7377;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -16px;
+}
+.input_item {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+    transition: border 0.3s ease;
+  }
+  .input_item:focus {
+    border-bottom: 2px solid #0dccd3;
+    outline: none;
+  }
+  
+  .input_btn {
+    font-size: 30px;
+    color: #747474;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 8px;
+    transition: all 0.3s;
+  }
+  .input_btn:hover {
+    color: #02979c;
+    transform: scale(1.1);
+  }
+  .input_btn:active {
+    transform: scale(0.8);
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+  .todo {
+    display: flex;
+  }
+  .item {
+    border: none;
+    min-width: 300px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+  }
+  .btns {
+    display: flex;
+  }
+  .edit {
+    font-size: 20px;
+  }
+  .edit:hover {
+    color: blue;
+  }
+  .done {
+    font-size: 20px;
+  }
+  .done:hover {
+    color: rgb(4, 158, 63);
+  }
+  .cross {
+    font-size: 20px;
+    flex-direction: column;
+  }
+  .cross:hover {
+    color: red;
+  }
